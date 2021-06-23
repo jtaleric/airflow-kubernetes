@@ -32,6 +32,8 @@ class Manifest():
                     })
 
     def get_baremetal_releases(self):
+        if not 'baremetal' in self.yaml['platforms']:
+            return
         for version in self.yaml['platforms']['baremetal']: 
             version_number = version['version']
             release_stream = version['releaseStream']
