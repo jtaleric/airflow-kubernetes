@@ -44,6 +44,12 @@ platforms:
       - name: azure
         profiles:
         - default
+        - sdn-common-target
+        - ovn-common-target
+        - sdn-med-target
+        - ovn-med-target
+        - sdn-lrg-target
+        - ovn-lrg-target
       - name: gcp
         profiles:
         - default
