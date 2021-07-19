@@ -149,7 +149,7 @@
                 "LOG_LEVEL": "info",
                 "LOG_STREAMING": "true",
                 "CLEANUP_WHEN_FINISH": "true",
-                "CLEANUP": "false"
+                "CLEANUP": "true"
             }
         },
         {
@@ -200,7 +200,7 @@
                 "LOG_LEVEL": "info",
                 "LOG_STREAMING": "true",
                 "CLEANUP_WHEN_FINISH": "true",
-                "CLEANUP": "false"
+                "CLEANUP": "true"
             }
         },
         {
