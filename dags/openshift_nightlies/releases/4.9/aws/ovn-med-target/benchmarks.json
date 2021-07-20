@@ -5,6 +5,17 @@
             "workload": "baseline-performance",
             "command": "./baseline_perf.sh"            
         },
+        {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
 	{
             "name": "node_density_iteration_1",
             "workload": "kube-burner",
@@ -21,6 +32,17 @@
                 "LOG_STREAMING": "true",
                 "CLEANUP_WHEN_FINISH": "true",
                 "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
             }
         },
 	{
@@ -41,6 +63,17 @@
                 "CLEANUP": "true"
             }
         },
+        {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
 	{
             "name": "node_density_iteration_3",
             "workload": "kube-burner",
@@ -57,6 +90,17 @@
                 "LOG_STREAMING": "true",
                 "CLEANUP_WHEN_FINISH": "true",
                 "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
             }
         },
 	{
@@ -77,6 +121,17 @@
                 "CLEANUP": "true"
             }
         },
+        {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
 	{
             "name": "node_density_heavy_iteration_2",
             "workload": "kube-burner",
@@ -93,6 +148,17 @@
                 "LOG_STREAMING": "true",
                 "CLEANUP_WHEN_FINISH": "true",
                 "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
             }
         },
 	{
@@ -114,6 +180,17 @@
             }
         },
         {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
+        {
             "name": "cluster_density_iteration_1",
             "workload": "kube-burner",
             "command": "./run_clusterdensity_test_fromgit.sh",
@@ -128,6 +205,17 @@
                 "LOG_STREAMING": "true",
                 "CLEANUP_WHEN_FINISH": "true",
                 "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
             }
         },
         {
@@ -148,6 +236,17 @@
             }
         },
         {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
+        {
             "name": "cluster_density_iteration_3",
             "workload": "kube-burner",
             "command": "./run_clusterdensity_test_fromgit.sh",
@@ -162,6 +261,17 @@
                 "LOG_STREAMING": "true",
                 "CLEANUP_WHEN_FINISH": "true",
                 "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
             }
         }
     ]
