@@ -6,7 +6,7 @@
             "command": "./baseline_perf.sh"            
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_0_1",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -35,7 +35,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_1_1",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -64,7 +64,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_1_2",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -93,7 +93,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_1_3",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -103,6 +103,66 @@
                 "STORAGE_MODE": "snappy"
             }
         },
+	{
+            "name": "node_density_iteration_4",
+            "workload": "kube-burner",
+            "command": "./run_nodedensity_test_fromgit.sh",
+            "env": {
+                "PODS_PER_NODE": "250",
+                "NODE_COUNT": "20",
+                "JOB_TIMEOUT": "18000",
+                "QPS": "20",
+                "BURST": "20",
+                "STEP_SIZE": "30s",
+                "METRICS_PROFILE": "metrics.yaml",
+                "LOG_LEVEL": "info",
+                "LOG_STREAMING": "true",
+                "CLEANUP_WHEN_FINISH": "true",
+                "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather_1_4",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
+
+	{
+            "name": "node_density_iteration_5",
+            "workload": "kube-burner",
+            "command": "./run_nodedensity_test_fromgit.sh",
+            "env": {
+                "PODS_PER_NODE": "250",
+                "NODE_COUNT": "20",
+                "JOB_TIMEOUT": "18000",
+                "QPS": "20",
+                "BURST": "20",
+                "STEP_SIZE": "30s",
+                "METRICS_PROFILE": "metrics.yaml",
+                "LOG_LEVEL": "info",
+                "LOG_STREAMING": "true",
+                "CLEANUP_WHEN_FINISH": "true",
+                "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather_1_5",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
+
 	{
             "name": "node_density_heavy_iteration_1",
             "workload": "kube-burner",
@@ -122,7 +182,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_2_1",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -151,7 +211,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_2_2",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -180,7 +240,65 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_2_3",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
+	{
+            "name": "node_density_heavy_iteration_4",
+            "workload": "kube-burner",
+            "command": "./run_nodedensity-heavy_test_fromgit.sh",
+            "env": {
+                "PODS_PER_NODE": "250",
+                "NODE_COUNT": "20",
+                "JOB_TIMEOUT": "18000",
+                "QPS": "20",
+                "BURST": "20",
+                "STEP_SIZE": "30s",
+                "METRICS_PROFILE": "metrics.yaml",
+                "LOG_LEVEL": "info",
+                "LOG_STREAMING": "true",
+                "CLEANUP_WHEN_FINISH": "true",
+                "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather_2_4",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
+	{
+            "name": "node_density_heavy_iteration_5",
+            "workload": "kube-burner",
+            "command": "./run_nodedensity-heavy_test_fromgit.sh",
+            "env": {
+                "PODS_PER_NODE": "250",
+                "NODE_COUNT": "20",
+                "JOB_TIMEOUT": "18000",
+                "QPS": "20",
+                "BURST": "20",
+                "STEP_SIZE": "30s",
+                "METRICS_PROFILE": "metrics.yaml",
+                "LOG_LEVEL": "info",
+                "LOG_STREAMING": "true",
+                "CLEANUP_WHEN_FINISH": "true",
+                "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather_2_5",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -208,7 +326,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_3_1",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -236,7 +354,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_3_2",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -264,7 +382,63 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_3_3",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
+        {
+            "name": "cluster_density_iteration_4",
+            "workload": "kube-burner",
+            "command": "./run_clusterdensity_test_fromgit.sh",
+            "env": {
+                "JOB_ITERATIONS": "500",
+                "JOB_TIMEOUT": "18000",
+                "STEP_SIZE": "30s",
+                "QPS": "20",
+                "BURST": "20",
+                "METRICS_PROFILE": "metrics-aggregated.yaml",
+                "LOG_LEVEL": "info",
+                "LOG_STREAMING": "true",
+                "CLEANUP_WHEN_FINISH": "true",
+                "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather_3_4",
+            "workload": "scale-ci-diagnosis",
+            "command": "./ocp_diagnosis.sh",
+            "env": {
+                "PROMETHEUS_CAPTURE": "false",
+                "PROMETHEUS_CAPTURE_TYPE": "full",
+                "OPENSHIFT_MUST_GATHER": "true",
+                "STORAGE_MODE": "snappy"
+            }
+        },
+        {
+            "name": "cluster_density_iteration_5",
+            "workload": "kube-burner",
+            "command": "./run_clusterdensity_test_fromgit.sh",
+            "env": {
+                "JOB_ITERATIONS": "500",
+                "JOB_TIMEOUT": "18000",
+                "STEP_SIZE": "30s",
+                "QPS": "20",
+                "BURST": "20",
+                "METRICS_PROFILE": "metrics-aggregated.yaml",
+                "LOG_LEVEL": "info",
+                "LOG_STREAMING": "true",
+                "CLEANUP_WHEN_FINISH": "true",
+                "CLEANUP": "true"
+            }
+        },
+        {
+            "name": "must-gather_3_5",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {

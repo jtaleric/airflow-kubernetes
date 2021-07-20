@@ -6,7 +6,7 @@
             "command": "./baseline_perf.sh"            
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_1",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -35,7 +35,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_2",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -64,7 +64,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_3",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -93,7 +93,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_4",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -122,7 +122,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_5",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -151,7 +151,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_6",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -180,7 +180,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_7",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -208,7 +208,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_8",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -236,7 +236,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_9",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
@@ -264,7 +264,7 @@
             }
         },
         {
-            "name": "must-gather",
+            "name": "must-gather_10",
             "workload": "scale-ci-diagnosis",
             "command": "./ocp_diagnosis.sh",
             "env": {
