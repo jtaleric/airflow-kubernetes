@@ -59,6 +59,8 @@ class E2EBenchmarks():
         benchmarks = self._get_benchmarks(self.vars["benchmarks"])
         with TaskGroup("Index Results", prefix_group_id=False, dag=self.dag) as post_steps:
             indexers = self._add_indexers(benchmarks)
+        with TaskGroup("Must-Gather", prefix_group_id=False, dag=self.dag) as post_steps:
+            utils = self._add_utils(benchmarks)
         return benchmarks
 
     def _get_benchmarks(self, benchmarks):
@@ -82,6 +84,17 @@ class E2EBenchmarks():
     def _add_indexer(self, benchmark): 
         indexer = StatusIndexer(self.dag, self.version, self.release_stream, self.platform, self.profile, benchmark.task_id).get_index_task() 
         benchmark >> indexer 
+
+    def _add_utils(self, benchmarks):
+            for _, benchmark in enumerate(benchmarks):
+                if isinstance(benchmark, BashOperator):
+                    self._add_util(benchmark)
+                elif isinstance(benchmark, list):
+                    self._add_utils(benchmark)
+
+    def _add_util(self, benchmark):
+        utils = Diagnosis(self.dag, self.version, self.release)._get_util()
+        benchmark >> utils
 
     def _get_benchmark(self, benchmark):
         env = {**self.env, **benchmark.get('env', {}), **{"ES_SERVER": var_loader.get_elastic_url()}, **{"KUBEADMIN_PASSWORD": environ.get("KUBEADMIN_PASSWORD", "")}}
