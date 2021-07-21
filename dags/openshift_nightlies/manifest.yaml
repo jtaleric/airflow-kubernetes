@@ -19,6 +19,8 @@ platforms:
         - ovn-med-target
         - sdn-lrg-target
         - ovn-lrg-target
+        - sdn-data-plane
+        - ovn-data-plane
       - name: azure
         profiles:
         - sdn-common-target
