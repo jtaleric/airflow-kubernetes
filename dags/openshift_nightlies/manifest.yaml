@@ -21,6 +21,8 @@ platforms:
         - ovn-lrg-target
         - sdn-data-plane
         - ovn-data-plane
+        - ovn-common-upgrades
+        - sdn-common-upgrades
       - name: azure
         profiles:
         - sdn-common-target
