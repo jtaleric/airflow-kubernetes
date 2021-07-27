@@ -21,10 +21,17 @@ def get_latest_release_from_stream(base_url, release_stream):
     payload = requests.get(url).json()
     latest_accepted_release = payload["name"]
     latest_accepted_release_url = payload["downloadURL"]
-    return {
-        "openshift_client_location": f"{latest_accepted_release_url}/openshift-client-linux-{latest_accepted_release}.tar.gz",
-        "openshift_install_binary_url": f"{latest_accepted_release_url}/openshift-install-linux-{latest_accepted_release}.tar.gz"
-    }
+    install_binaries = Variable.get("install_binaries", default_var=None, deserialize_json=True)
+    if install_binaries is None:
+        return {
+            "openshift_client_location": f"{latest_accepted_release_url}/openshift-client-linux-{latest_accepted_release}.tar.gz",
+            "openshift_install_binary_url": f"{latest_accepted_release_url}/openshift-install-linux-{latest_accepted_release}.tar.gz"
+        }
+    elif 'openshift_client_location' in install_binaries and 'openshift_install_binary_url' in install_binaries:
+        return {
+            "openshift_client_location": install_binaries['openshift_client_location'],
+            "openshift_install_binary_url": install_binaries['openshift_install_binary_url']
+        }
 
 def get_elastic_url():
     elasticsearch_config = Variable.get("elasticsearch_config", deserialize_json=True)
