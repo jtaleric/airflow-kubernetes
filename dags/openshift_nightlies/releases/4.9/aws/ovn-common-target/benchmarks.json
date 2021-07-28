@@ -10,7 +10,7 @@
             "workload": "kube-burner",
             "command": "./run_nodedensity_test_fromgit.sh",
             "env": {
-                "PODS_PER_NODE": "250",
+                "PODS_PER_NODE": "249",
                 "NODE_COUNT": "20",
                 "JOB_TIMEOUT": "18000",
                 "QPS": "20",
@@ -28,7 +28,7 @@
             "workload": "kube-burner",
             "command": "./run_nodedensity_test_fromgit.sh",
             "env": {
-                "PODS_PER_NODE": "250",
+                "PODS_PER_NODE": "249",
                 "NODE_COUNT": "20",
                 "JOB_TIMEOUT": "18000",
                 "QPS": "20",
@@ -46,7 +46,7 @@
             "workload": "kube-burner",
             "command": "./run_nodedensity_test_fromgit.sh",
             "env": {
-                "PODS_PER_NODE": "250",
+                "PODS_PER_NODE": "249",
                 "NODE_COUNT": "20",
                 "JOB_TIMEOUT": "18000",
                 "QPS": "20",
@@ -64,7 +64,7 @@
             "workload": "kube-burner",
             "command": "./run_nodedensity_test_fromgit.sh",
             "env": {
-                "PODS_PER_NODE": "250",
+                "PODS_PER_NODE": "249",
                 "NODE_COUNT": "20",
                 "JOB_TIMEOUT": "18000",
                 "QPS": "20",
@@ -82,7 +82,7 @@
             "workload": "kube-burner",
             "command": "./run_nodedensity_test_fromgit.sh",
             "env": {
-                "PODS_PER_NODE": "250",
+                "PODS_PER_NODE": "249",
                 "NODE_COUNT": "20",
                 "JOB_TIMEOUT": "18000",
                 "QPS": "20",
@@ -100,7 +100,7 @@
             "workload": "kube-burner",
             "command": "./run_nodedensity-heavy_test_fromgit.sh",
             "env": {
-                "PODS_PER_NODE": "250",
+                "PODS_PER_NODE": "249",
                 "NODE_COUNT": "20",
                 "JOB_TIMEOUT": "18000",
                 "QPS": "20",
