@@ -23,6 +23,7 @@ platforms:
         - ovn-data-plane
         - ovn-common-upgrades
         - sdn-common-upgrades
+        - ovn-med-upgrades
       - name: azure
         profiles:
         - sdn-common-target
