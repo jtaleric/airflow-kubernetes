@@ -16,64 +16,29 @@ dagConfig:
     repository: quay.io/cloud-bulldozer
     tag: 2.1.3
 
-
 platforms:
   cloud:
-    - version: 4.8
-      releaseStream: 4.8.0-0.nightly
-      providers:
-      - name: aws
-        profiles:
-        - default
-        - ovn
-      - name: azure
-        profiles:
-        - default
-      - name: gcp
-        profiles:
-        - default
     - version: 4.9
       releaseStream: 4.9.0-0.nightly
       providers:
       - name: aws
         profiles:
-        - default
-        - ovn
+        - sdn-common-target
+        - sdn-data-plane
+        - sdn-med-target
+        - sdn-lrg-target
+        - sdn-common-upgrades
+        - ovn-common-target
+        - ovn-data-plane
+        - ovn-med-target
+        - ovn-lrg-target
+        - ovn-common-upgrades
+        - ovn-med-upgrades
       - name: azure
         profiles:
-        - default
-      - name: gcp
-        profiles:
-        - default
-  baremetal:
-    - version: 4.8
-      releaseStream: latest-4.8
-      build: dev
-      profiles:
-      - jetski
-  openstack:
-    - version: 4.7
-      releaseStream: 4.7.0-0.nightly
-      profiles:
-      - default
-    - version: 4.8
-      releaseStream: 4.8.0-0.nightly
-      profiles:
-      - default
-  rosa:
-    - version: 4.7
-      releaseStream: 4.7.0-0.nightly
-      profiles:
-      - default
-    - version: 4.8
-      releaseStream: 4.8.0-0.nightly
-      profiles:
-      - default
-      - osde2e
-      - ovn
-    - version: 4.9
-      releaseStream: 4.9.0-0.nightly
-      profiles:
-      - default
-      - osde2e
-      - ovn
+        - sdn-common-target
+        - sdn-med-target
+        - sdn-lrg-target
+        - ovn-common-target
+        - ovn-med-target
+        - ovn-lrg-target
