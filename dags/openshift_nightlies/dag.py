@@ -81,9 +81,9 @@ class CloudOpenshiftNightlyDAG(AbstractOpenshiftNightlyDAG):
         installer = self._get_openshift_installer()
         install_cluster = installer.get_install_task()
 
-        with TaskGroup("utils", prefix_group_id=False, dag=self.dag) as utils:
-            utils_tasks = self._get_scale_ci_diagnosis().get_utils()
-            chain(*utils_tasks)
+        #with TaskGroup("utils", prefix_group_id=False, dag=self.dag) as utils:
+        #    utils_tasks = self._get_scale_ci_diagnosis().get_utils()
+        #    chain(*utils_tasks)
 
         with TaskGroup("benchmarks", prefix_group_id=False, dag=self.dag) as benchmarks:
             benchmark_tasks = self._get_e2e_benchmarks().get_benchmarks()
@@ -91,9 +91,9 @@ class CloudOpenshiftNightlyDAG(AbstractOpenshiftNightlyDAG):
 
         if self.config.cleanup_on_success:
             cleanup_cluster = installer.get_cleanup_task()
-            install_cluster >> benchmarks >> utils >> cleanup_cluster
-        else:
-            install_cluster >> benchmarks >> utils
+        #    install_cluster >> benchmarks >> utils >> cleanup_cluster
+        #else:
+        #    install_cluster >> benchmarks >> utils
 
     def _get_openshift_installer(self):
         return openshift.CloudOpenshiftInstaller(self.dag, self.config, self.release)
