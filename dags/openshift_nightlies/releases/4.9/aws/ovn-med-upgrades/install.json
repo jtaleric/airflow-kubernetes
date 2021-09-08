@@ -31,5 +31,6 @@
     "openshift_toggle_infra_node": "true",
     "openshift_toggle_workload_node": "true",
     "openshift_toggle_ovn_patch": "false",
-    "openshift_ovn_image": "quay.io/mmichelson/ovn-kubernetes-scaletest:2021-08-04"
+    "openshift_ovn_image": "quay.io/mmichelson/ovn-kubernetes-scaletest:2021-08-04",
+    "openshift_install_release_image_override": "quay.io/openshift-release-dev/ocp-release:4.8.10-x86_64"
 }
