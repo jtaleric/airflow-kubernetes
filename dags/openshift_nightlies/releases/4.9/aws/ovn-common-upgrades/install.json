@@ -32,5 +32,5 @@
     "openshift_toggle_workload_node": "true",
     "openshift_toggle_ovn_patch": "false",
     "openshift_ovn_image": "quay.io/trozet/ovn-kubernetes:scale-2021-07-28-debug_7-5queues-portrefactor-proper",
-    "openshift_install_release_image_override": "quay.io/openshift-release-dev/ocp-release:4.8.10-x86_64"
+    "openshift_install_release_image_override": "registry.build02.ci.openshift.org/ci-op-f1zr02zy/release:latest"
 }
