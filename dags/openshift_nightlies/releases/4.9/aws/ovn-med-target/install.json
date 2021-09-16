@@ -31,5 +31,5 @@
     "openshift_toggle_infra_node": "true",
     "openshift_toggle_workload_node": "true",
     "openshift_toggle_ovn_patch": "true",
-    "openshift_ovn_image": "quay.io/trozet/ovn-kubernetes:phase2_scale21_update3_leaderonly_deletehostiface"
+    "openshift_ovn_image": "quay.io/trozet/ovn-kubernetes:phase2_scale24_pr750"
 }
