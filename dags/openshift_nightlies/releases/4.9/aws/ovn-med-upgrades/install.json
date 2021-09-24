@@ -30,6 +30,6 @@
     "openshift_alertmanager_storage_size": "20Gi",
     "openshift_toggle_infra_node": "true",
     "openshift_toggle_workload_node": "true",
-    "openshift_toggle_ovn_patch": "false",
+    "openshift_toggle_ovn_patch": "true",
     "openshift_ovn_image": "quay.io/trozet/hyperkube:p0lin0mial-cacher-watcher-no-deepcopy"
 }
