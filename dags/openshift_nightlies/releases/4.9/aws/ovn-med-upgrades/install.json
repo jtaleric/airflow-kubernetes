@@ -31,5 +31,5 @@
     "openshift_toggle_infra_node": "true",
     "openshift_toggle_workload_node": "true",
     "openshift_toggle_ovn_patch": "false",
-    "openshift_install_release_image_override": "https://openshift-release-artifacts.apps.ci.l2s4.p1.openshiftapps.com/4.8.13/openshift-install-linux-4.8.13.tar.gz"
+    "openshift_install_release_image_override": "quay.io/openshift-release-dev/ocp-release:4.8.13-x86_64"
 }
