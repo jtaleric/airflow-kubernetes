@@ -1,6 +1,4 @@
 versionAliases:
-  - version: 4.7
-    alias: previous
   - version: 4.8
     alias: stable
   - version: 4.9
