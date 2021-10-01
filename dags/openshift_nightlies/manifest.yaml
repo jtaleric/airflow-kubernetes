@@ -1,7 +1,7 @@
 versionAliases:
   - version: "4.8"
     alias: stable
-  - version: "4.9'
+  - version: "4.9"
     alias: next
   - version: "4.10"
     alias: future
