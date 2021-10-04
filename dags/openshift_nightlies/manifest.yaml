@@ -1,10 +1,6 @@
 versionAliases:
-  - version: "4.8"
-    alias: stable
-  - version: "4.9"
-    alias: next
   - version: "4.10"
-    alias: future
+    alias: next
 
 dagConfig:
   schedules:
@@ -18,30 +14,6 @@ dagConfig:
 
 platforms:
   cloud:
-    - version: "4.9"
-      releaseStream: 4.9.0-0.nightly
-      providers:
-      - name: aws
-        profiles:
-        - sdn-common-target
-        - sdn-data-plane
-        - sdn-med-target
-        - sdn-lrg-target
-        - sdn-common-upgrades
-        - ovn-common-target
-        - ovn-data-plane
-        - ovn-med-target
-        - ovn-lrg-target
-        - ovn-common-upgrades
-        - ovn-med-upgrades
-      - name: azure
-        profiles:
-        - sdn-common-target
-        - sdn-med-target
-        - sdn-lrg-target
-        - ovn-common-target
-        - ovn-med-target
-        - ovn-lrg-target
     - version: "4.10"
       releaseStream: 4.10.0-0.nightly
       providers:
