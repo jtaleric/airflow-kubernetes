@@ -5,6 +5,7 @@
     "ansible_ssh_password":"",
     "install_osp":"false",
     "osp_public_external_interface": "true",
+    "ocp_network_type": "OpenshiftSDN",
     "openstack_version":"16",
     "scale_lab_cloud_name": "cloud21",
     "kubeconfig_path": "/home/stack/vlan609/auth/kubeconfig",
@@ -29,6 +30,7 @@
     "ocp_base_domain": "rdu2.scalelab.redhat.com",
     "ocp_cluster_name": "vlan609",
     "ocp_release": "latest-4.8",
+    "ocp_dev_preview": "false",
     "master_nodes": "3",
     "worker_nodes": "3",
     "ocp_master_flavor": "m5.4xlarge",
@@ -41,7 +43,6 @@
     "openshift_worker_root_volume_iops": "0",
     "openshift_cidr": "10.128.0.0/14",
     "openshift_machine_cidr": "10.0.0.0/16",
-    "ocp_network_type": "",
     "openshift_service_network": "172.30.0.0/16",
     "openshift_host_prefix": "23",
     "openshift_infra_node_flavor": "m5.4xlarge",
@@ -54,5 +55,6 @@
     "openshift_prometheus_storage_size": "10Gi",
     "openshift_alertmanager_storage_class": "standard",
     "openshift_alertmanager_storage_size": "2Gi",
+    "openshift_toggle_workload_node": "false",
     "job_iterations": "1"
  }

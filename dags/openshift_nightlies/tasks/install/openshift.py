@@ -52,7 +52,9 @@ class AbstractOpenshiftInstaller(ABC):
             **self.openstack_creds,
             **self.rosa_creds,
             **self.release.get_latest_release(self.release_stream_base_url),
-            **{ "es_server": var_loader.get_secret('elasticsearch') }
+            **{ "es_server": var_loader.get_secret('elasticsearch'),
+                "thanos_receiver_url": var_loader.get_secret('thanos_receiver_url'),
+                "loki_receiver_url": var_loader.get_secret('loki_receiver_url') }
         }
         super().__init__()
 
@@ -107,7 +109,8 @@ class AbstractOpenshiftInstaller(ABC):
                     "openshift_install": True, "openshift_post_config": True, "openshift_post_install": True}
         else:
             return {"openshift_cleanup": True, "openshift_debug_config": False,
-                    "openshift_install": False, "openshift_post_config": False, "openshift_post_install": False}
+                    "openshift_install": False, "openshift_post_config": False, "openshift_post_install": False,
+                    "rhacs_enable": False}
 
     # This Helper Injects Airflow environment variables into the task execution runtime
     # This allows the task to interface with the Kubernetes cluster Airflow is hosted on.
