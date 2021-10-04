@@ -58,6 +58,7 @@ platforms:
         - ovn-lrg-target
         - ovn-common-upgrades
         - ovn-med-upgrades
+        - ovn-superlarge-vzw
       - name: azure
         profiles:
         - sdn-common-target
