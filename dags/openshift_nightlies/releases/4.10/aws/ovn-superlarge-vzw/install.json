@@ -32,6 +32,6 @@
     "openshift_toggle_workload_node": "true",
     "openshift_toggle_ovn_patch": "false",
     "openshift_ovn_image": "quay.io/trozet/ovn-kubernetes:phase2_scale28_pr750",
-    "thanos_enable": "false",
-    "loki_enable": "false" 
+    "thanos_enable": false,
+    "loki_enable": false 
 }
