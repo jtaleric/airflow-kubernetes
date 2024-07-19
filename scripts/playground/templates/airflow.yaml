@@ -85,7 +85,7 @@ spec:
       - name: dags.gitSync.repo
         value: $_remote_origin_url
       - name: dags.gitSync.branch
-        value: $_branch
+        value: "$_branch"
   syncPolicy:
     automated:
       prune: true
